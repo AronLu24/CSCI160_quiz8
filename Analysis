@@ -1,0 +1,43 @@
+Starcase:
+
+Time Complexity:
+The time complexity of the staircase algorithm is O(n^2). This complexity arises 
+due to the nested loops used to generate the staircase pattern.
+
+The outer loop runs n times, controlling the number of rows in the staircase.
+The inner loops print the spaces and # symbols for each row. The number of 
+iterations in the inner loops increases with the row number, contributing to a 
+total of approximately n^2 iterations for n rows.
+
+Space Complexity:
+The space complexity of the staircase algorithm is O(1) or constant space complexity. 
+This is because the space used in the algorithm remains constant regardless of the input size n.
+
+The space used is only for variables like loop counters (i, j), and they don't depend on the input size.
+The algorithm doesn't use any data structures or arrays that grow with the input size. It simply prints 
+the staircase pattern directly to the console without storing the entire pattern in memory.
+In summary, the time complexity is quadratic (O(n^2)) due to the nested loops, while the space complexity is constant (O(1)).
+
+
+
+Alternating Characters:
+
+Time Complexity:
+The time complexity of the recursive alternatingCharacters algorithm is O(n) where n is the length of the input string.
+
+In the worst case, the recursive function countDeletions processes each character in the string exactly once.
+For each character, the function performs constant-time operations (comparisons and increments) before making a recursive call for the next character.
+Therefore, the time taken is directly proportional to the length of the input string.
+
+Space Complexity:
+The space complexity of the recursive alternatingCharacters algorithm is O(n) due to the recursive calls that build up the call stack.
+
+The recursive calls consume memory on the call stack. In the worst case, the depth of the call stack can be as large as the length of the input string n.
+Each recursive call uses additional space on the stack for its function call, and this accumulates as the recursion proceeds.
+Therefore, the space taken by the call stack is proportional to the length of the input string.
+
+
+
+
+
+
